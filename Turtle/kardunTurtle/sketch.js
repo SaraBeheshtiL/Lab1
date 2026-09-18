@@ -24,33 +24,55 @@ async function setup() {
 function giveInstructions() {
   turtle.penColor("#8A2BE2");
   turtle.penWidth(4);
+  turtle.setSpeed(2);
 
-  // Press a face onto the canvas, so we can see where we started.
-  turtle.stamp();
+  // Creating a flower inspired by the tiles from my workplace
+  turtle.penUp();
+  turtle.goTo(400, 300);
+  turtle.penDown();
 
-  // Creating a
-
-  turtle.repeat(12, function () {
-    // Draw one petal
-
+  turtle.repeat(6, function () {
     turtle.forward(100);
-
-    turtle.right(60);
-
-    turtle.forward(60);
-
-    turtle.right(120);
-
-    turtle.forward(60);
-
-    turtle.right(60);
-
-    turtle.backward(100);
-
-    // Turn to start the next petal
-
-    turtle.right(30);
+    turtle.left(60);
   });
+  turtle.right(120);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.right(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
+  turtle.left(60);
+  turtle.forward(100);
 }
 
 function draw() {
@@ -58,7 +80,7 @@ function draw() {
   turtle.update(); // runs the next bit of the instructions and draws everything
 }
 
-// Press R to start over.
+//Press R to start over.
 function keyPressed() {
   if (key === "r" || key === "R") {
     turtle.reset();
