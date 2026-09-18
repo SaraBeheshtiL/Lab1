@@ -72,7 +72,7 @@ function draw() {
   strokeWeight(6);
   arc(400, 550, 60, 20, PI, TWO_PI);
 
-  // Weird curls
+  // Curls
   noFill();
   stroke(0);
   strokeWeight(4);
@@ -210,12 +210,6 @@ function draw() {
   fill(255);
   stroke(0);
   strokeWeight(1);
-  // upper teeth
-  //triangle(580, 762, 585, 765, 582, 775);
-  //triangle(585, 765, 590, 767, 587, 775);
   triangle(590, 767, 600, 769, 594, 779);
   triangle(603, 769, 613, 767, 610, 779);
-
-  //extra-long tooth
-  //triangle(615, 767, 621, 760, 618, 775);
 }
