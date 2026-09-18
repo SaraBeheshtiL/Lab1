@@ -5,7 +5,7 @@
 let turtle;
 
 async function setup() {
-  createCanvas(800, 600);
+  createCanvas(800, 800);
 
   // The turtle's face. Drop any image into this folder and point at it here —
   // it gets scaled and cropped into a circle, so anything roughly square works.
@@ -28,7 +28,7 @@ function giveInstructions() {
 
   // Creating a flower inspired by the tiles from my workplace
   turtle.penUp();
-  turtle.goTo(400, 300);
+  turtle.goTo(450, 400);
   turtle.penDown();
 
   turtle.repeat(6, function () {
