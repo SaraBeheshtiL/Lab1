@@ -9,7 +9,7 @@ async function setup() {
 
   // The turtle's face. Drop any image into this folder and point at it here —
   // it gets scaled and cropped into a circle, so anything roughly square works.
-  const face = await loadImage("turtle.jpg");
+  const face = await loadImage("sara.jpg");
 
   // Make a turtle near the bottom left, facing up.
   turtle = new KardunTurtle(200, 420, face);
@@ -22,11 +22,35 @@ async function setup() {
 // ---------------------------------------------------------------
 
 function giveInstructions() {
-  turtle.penColor("#ff7a3c");
+  turtle.penColor("#8A2BE2");
   turtle.penWidth(4);
 
   // Press a face onto the canvas, so we can see where we started.
   turtle.stamp();
+
+  // Creating a
+
+  turtle.repeat(12, function () {
+    // Draw one petal
+
+    turtle.forward(100);
+
+    turtle.right(60);
+
+    turtle.forward(60);
+
+    turtle.right(120);
+
+    turtle.forward(60);
+
+    turtle.right(60);
+
+    turtle.backward(100);
+
+    // Turn to start the next petal
+
+    turtle.right(30);
+  });
 }
 
 function draw() {
